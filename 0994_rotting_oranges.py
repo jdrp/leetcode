@@ -1,7 +1,7 @@
 from collections import deque
 
 
-def orangesRotting(grid):
+def oranges_rotting(grid):
     if not grid or not grid[0]: return 0
     
     height, width = len(grid), len(grid[0])
@@ -37,21 +37,21 @@ def orangesRotting(grid):
     return minutes
 
 
-print(orangesRotting([[2,1,1],[1,1,0],[0,1,1]]))          # 4
-print(orangesRotting([[2,1,1],[0,1,1],[1,0,1]]))          # -1
-print(orangesRotting([[0,2]]))                            # 0
+print(oranges_rotting([[2,1,1],[1,1,0],[0,1,1]]))          # 4
+print(oranges_rotting([[2,1,1],[0,1,1],[1,0,1]]))          # -1
+print(oranges_rotting([[0,2]]))                            # 0
 
-print(orangesRotting([[1]]))                              # -1
-print(orangesRotting([[2]]))                              # 0
-print(orangesRotting([[0]]))                              # 0
+print(oranges_rotting([[1]]))                              # -1
+print(oranges_rotting([[2]]))                              # 0
+print(oranges_rotting([[0]]))                              # 0
 
-print(orangesRotting([[2,2],[2,2]]))                      # 0
-print(orangesRotting([[1,1],[1,1]]))                      # -1
-print(orangesRotting([[2,1],[1,1]]))                      # 2
+print(oranges_rotting([[2,2],[2,2]]))                      # 0
+print(oranges_rotting([[1,1],[1,1]]))                      # -1
+print(oranges_rotting([[2,1],[1,1]]))                      # 2
 
-print(orangesRotting([[2,1,1,1]]))                        # 3
-print(orangesRotting([[2],[1],[1],[1]]))                  # 3
+print(oranges_rotting([[2,1,1,1]]))                        # 3
+print(oranges_rotting([[2],[1],[1],[1]]))                  # 3
 
-print(orangesRotting([[2,0,1]]))                          # -1
-print(orangesRotting([[2,1,0,1]]))                        # -1
-print(orangesRotting([[2,1,1],[1,1,1],[1,1,2]]))          # 2
+print(oranges_rotting([[2,0,1]]))                          # -1
+print(oranges_rotting([[2,1,0,1]]))                        # -1
+print(oranges_rotting([[2,1,1],[1,1,1],[1,1,2]]))          # 2
