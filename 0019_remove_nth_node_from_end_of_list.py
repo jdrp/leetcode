@@ -36,7 +36,6 @@ def remove_nth_from_end(head, n):
         slow = slow.next
         
     slow.next = slow.next.next
-    
     return dummy.next
 
 
